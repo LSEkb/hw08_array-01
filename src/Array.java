@@ -84,16 +84,10 @@ public class Array {
         for (int i = 0; i < integers.length; i++) {
             int number = integers[i];
             if (number % 2 != 0) {
-                number = number + 1;
-                eventNumbers[i] = number;
-            } else {
-                eventNumbers[i] = number;
+                number++;
             }
+            eventNumbers[i] = number;
         }
         System.out.println(Arrays.toString(eventNumbers));
-        // for (int k = 0; k < eventNumbers.length - 1; k++) {
-        //     System.out.printf(eventNumbers[k] + ", ");
-        //  }
-        // System.out.println(eventNumbers[eventNumbers.length - 1]);
     }
 }
